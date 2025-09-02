@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "rootDirs": ["src"],
+    "outDir": "dist",
+    "lib": ["es2020", "dom"],
+    "target": "es2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "types": ["node"],
+    "resolveJsonModule": true
+  }
+}

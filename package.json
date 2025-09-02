@@ -1,0 +1,35 @@
+{
+  "name": "api.preview.cio.football",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "npm run build && node ./dist/index.js",
+    "dev": "./node_modules/nodemon/bin/nodemon.js -e ts  --exec \"npm run watch\"",
+    "start": "node ./dist/index.js",
+    "format": "npx prettier 'src/**/*.{js,ts,mjs,cjs,json,jsx,tsx}' --write"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.879.0",
+    "body-parser": "^2.2.0",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mongoose": "^8.18.0",
+    "ts-unwrap": "^2.0.0"
+  },
+  "devDependencies": {
+    "@body/json": "^0.2.2",
+    "@types/cors": "^2.8.19",
+    "@types/express-session": "^1.18.2",
+    "@types/node": "^24.3.0",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.9.2"
+  }
+}
