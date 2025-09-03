@@ -54,7 +54,6 @@ COPY --from=build /usr/src/app/dist ./dist
 
 # Expose the port that the application listens on.
 EXPOSE 4000
-EXPOSE 443
 
 # Run the application.
 CMD npm start
