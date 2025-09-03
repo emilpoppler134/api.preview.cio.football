@@ -4,6 +4,8 @@ import unwrap from "ts-unwrap";
 dotenv.config();
 
 export const PORT = unwrap(process.env.PORT) ? parseInt(unwrap(process.env.PORT), 10) : 4000;
+export const SSL_CERT_FILE = unwrap(process.env.SSL_CERT_FILE);
+export const SSL_KEY_FILE = unwrap(process.env.SSL_KEY_FILE);
 
 export const DATABASE_USERNAME = unwrap(process.env.DATABASE_USERNAME);
 export const DATABASE_PASSWORD = unwrap(process.env.DATABASE_PASSWORD);
